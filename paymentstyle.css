@@ -1,0 +1,76 @@
+*{
+    box-sizing:border-box;
+}
+h1{
+    background-color:hsl(165, 21%, 59%);
+    padding:11px 20px; 
+}
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin:30px 100px;
+    font-size:17px;
+    padding:30px 20px 30px 20px;
+}
+.container{
+    background-color: #ecf5db;
+    padding: 5px 15px 20px 15px;
+    border:1px solid rgb(138, 135, 135);
+    border-radius:4px;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+input[type="cardnumber"]
+select,
+textarea{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    margin: 10px;
+}
+fieldset{
+    background:#fff;
+    border:0.1px solid #ccc;
+    border-radius:5px;
+}    
+.mainheading{
+    text-align:center;
+}
+input[type="submit"]{
+    background-color:#9bb8e4;
+    padding:11px 20px;
+    border:none;
+    border-radius:4px;
+    width:100%
+}
+input[type=submit]:hover{
+    background-color: #9a8ea1;
+}
+#name{
+    width:976px;
+}
+#Address{
+    width: 976px;
+}
+#Email{
+    width:976px;
+}
+#Pincode{
+    width:976px;
+}
+#Cardtype{
+    width:370px;
+    height:20px;
+}
+#cardnumber{
+    width:327px;
+}
+#expdate{
+    width:300px;
+    height:20px!important;
+}
+#gender{
+    text-decoration: none;
+}

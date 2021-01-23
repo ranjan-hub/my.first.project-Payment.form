@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+    <link rel="stylesheet" href="paymentstyle.css">
+</head>
+<body>
+<div class="container">
+    <!--on the blank value after action , we have to put server where data is to bes sent-->
+    <form action="">
+        <h1 class="mainheading">Payment</h1>
+        <hr>
+        <h3>Contact Information</h3>
+        <!--the second name:"name" is for self idenfying the data -
+      s      the user given data will be sent to the server with this "name" name-->
+            <label id="name-label" for="name" ><p>Name:*</p></label>
+                <input type="text" id="name"placeholder="Niranjan pradhan" name="name" required>
+        <fieldset>
+              <legend id="gender" required>Gender*</legend>
+              Male<input type="radio" name="Gender" id="Male">
+              Female<input type="radio" name="Gender" id="Female">
+        </fieldset>
+        <p>Address: </p><textarea name="Address" placeholder="add your Address" id="Address" cols="100" rows="10"></textarea>
+        <p>Email:*<input type="email" placeholder="criya5288@gmail.com" name="Email" id="Email"required></p>
+        <p>Pin code:* <input type="number" placeholder="833102" name="Pincode" id="Pincode"required></p>
+        <h3>Payment Information</h3>
+        <p>Card type: *
+            <select name="cardtype" id="Cardtype" required>
+                <option value="--select a card type--">--select a card type--</option>
+                <option name="Visa" id="Visa">Visa</option>
+                <option name="=Mastercard" id="Mastercard">Matercard</option>
+                <option  name="Rupay" id="Rupay">Rupay</option>      
+            </select>
+            <p>
+                Card holder's name*<input style="width:320px" type="text" name="cardholder" placeholder="Niranjan pradhan" required>
+                Card Number:*<input type="cardnumber" placeholder="1111-2222-3333-4444" name="Cardnumber" id="cardnumber"required>
+            </p>
+            <p>Expiration date:*<input type="date" placeholder="mm/yy" name="expdate" id="expdate"required></p>
+            <p>CVV:*<input type="password" placeholder="073" name="cvv" id="cvv"required></p>
+            <p><input type="submit" value="Pay Now"required></p>
+
+    </form>
+</div>
+</body>
+</html>
